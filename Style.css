@@ -1,0 +1,53 @@
+body{
+    background-color: #fca7a5;
+    color: #a76286;
+}
+
+/*Styling the list of items in the na bar*/
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    z-index: 10;
+}
+/*Styling the space of each item*/
+nav li{
+    list-style: none;
+    background-color: #130329;
+    color: #5a3e79;
+    margin: 0;
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+    display: flex;
+    position: relative;
+}
+/*Styling the links, both unvisited and visited*/
+nav a, nav a:visited {
+    text-decoration: none;
+    width: 100%;
+    padding: 8px 0;
+    color: #d7dafa;
+}
+/*Hovering over a link*/
+nav a:hover{
+    color: #130329;
+    background-color: #664496;
+}
+.dropdown-content{
+    position: absolute;
+    top:34px;
+    width: 100%;
+    display: none;
+    z-index: 20;
+}
+.dropdown-content a{
+    font-weight: bold;
+}
+nav li:hover .dropdown-content{
+    display: block;
+}
+.dropdown-content ul{
+    flex-direction:column;
+}
